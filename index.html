@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!----------------- Login box ----------------->
+      <div class="login-box">
+        <div>
+          <h1>Welcome!</h1>
+        </div>
+        <form>
+          <div>
+            <label>
+              <input
+                type="text"
+                name="username"
+                class="username"
+                placeholder="Username"
+                required
+              />
+              <img src="./images/person.svg" class="user-icon" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <input
+                type="password"
+                name="password"
+                class="password"
+                placeholder="Password"
+                required
+              />
+              <img src="./images/key.svg" class="key-icon" />
+            </label>
+          </div>
+          <div class="remember">
+            <label>
+              <input type="checkbox" class="remember-check" /> Remember me!
+            </label>
+          </div>
+          <div class="btn">
+            <label>
+              <button type="submit" name="submit" class="submit-btn">
+                Log in
+              </button>
+            </label>
+          </div>
+        </form>
+        <div class="forgot">
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+
+      <!----------------- Register start ----------------->
+      <div class="register-start">
+        <div>
+          <h1>New here?</h1>
+          <h2>Sign up to join the experience</h2>
+          <div class="btn start">
+            <button type="button" class="register-btn">Get started!</button>
+          </div>
+        </div>
+      </div>
+
+      <!----------------- Register box ----------------->
+      <div class="register-box hidden">
+        <div>
+          <h1>
+            Register<br />
+            new user
+          </h1>
+        </div>
+        <form>
+          <div>
+            <label>
+              <input
+                type="email"
+                name="reg-email"
+                class="reg-email"
+                placeholder="E-mail"
+                required
+              />
+              <img src="./images/envelope-at.svg" class="email-icon" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <input
+                type="text"
+                name="reg-username"
+                class="reg-username"
+                placeholder="Username"
+                required
+              />
+              <img src="./images/person.svg" class="user-icon" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <input
+                type="password"
+                name="reg-password"
+                class="reg-password"
+                placeholder="Password"
+                required
+              />
+              <img src="./images/key.svg" class="key-icon" />
+            </label>
+            <div class="terms">
+              <label>
+                <input type="checkbox" name="checkbox" class="checkbox" /> Agree
+                to <a href="#">terms & conditions </a>!
+              </label>
+            </div>
+          </div>
+          <div class="btn">
+            <label>
+              <button type="submit" name="reg-submit" class="reg-submit">
+                Create account
+              </button>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <!----------------- login startpage ----------------->
+      <div class="login-start hidden">
+        <div>
+          <h1>Wazzup?</h1>
+          <h2>Allready have an account?</h2>
+          <div class="btn start">
+            <button type="button" class="login-btn">Go to log in</button>
+          </div>
+        </div>
+      </div>
+
+      <!----------------- forgot passwword box  ----------------->
+      <div class="reset-box hidden">
+        <div>
+          <h1>Reset Password</h1>
+        </div>
+        <form>
+          <div>
+            <label>
+              <input
+                type="email"
+                name="reset-email"
+                class="reset-email"
+                placeholder="E-mail"
+              />
+              <img src="./images/envelope-at.svg" class="email-icon" />
+            </label>
+          </div>
+
+          <div class="btn">
+            <button type="submit" name="reset-submit" class="reset-submit">
+              Reset password
+            </button>
+          </div>
+        </form>
+        <div class="go-back">
+          <a href="#">Go back to log in</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

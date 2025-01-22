@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "manrope", sans-serif;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px white solid;
+  width: 40rem;
+  height: 30rem;
+  position: relative;
+  border: none;
+}
+
+.login-box {
+  background-color: rgb(192, 188, 188);
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  transition: all 1s ease-in-out;
+  bottom: 0rem;
+}
+
+.login-box.hidden {
+  position: absolute;
+  bottom: -30rem;
+  transition: all 1s ease-in-out;
+}
+
+.login-start {
+  background: rgb(102, 0, 204);
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transition: all 2s ease;
+  top: 0rem;
+}
+
+.login-start.hidden {
+  position: absolute;
+  top: 30rem;
+  transition: all 2s ease;
+}
+
+.register-start {
+  background: rgb(102, 0, 204);
+  /*background: linear-gradient(to bottom, #6600cc 0%, #9966ff 100%); */
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 0rem;
+  transition: all 2s ease;
+}
+
+.register-start.hidden {
+  position: absolute;
+  top: -30rem;
+  transition: all 2s ease;
+}
+
+.register-box {
+  background: rgb(192, 188, 188);
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0%;
+  top: 0rem;
+  transition: all 1s ease-in-out;
+}
+
+.register-box.hidden {
+  position: absolute;
+  top: -30rem;
+  transition: all 1s ease-in-out;
+}
+
+.reset-box {
+  background: rgb(192, 188, 188);
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0%;
+  top: 0rem;
+  transition: all 1s ease-in-out;
+  z-index: 10;
+}
+
+.reset-box.hidden {
+  position: absolute;
+  top: 0rem;
+  left: -50%;
+  transition: all 1s ease;
+}
+
+/* -------------- Inputs ------------ */
+
+input {
+  border-radius: 20px;
+  border: none;
+  padding: 1rem;
+  margin: 0.5rem 0rem;
+  color: #6600cc;
+  outline: none;
+  width: 15rem;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.terms {
+  color: white;
+  font-size: 0.8rem;
+}
+.terms .checkbox {
+  width: 1rem;
+  height: 1rem;
+  accent-color: rgb(102, 0, 204);
+  transform: translateY(3px);
+  margin-top: 0rem;
+}
+
+.forgot {
+  font-size: 0.8rem;
+  justify-self: center;
+}
+
+.remember {
+  font-size: 0.9rem;
+  margin-left: 0.6rem;
+  color: white;
+}
+
+.remember input {
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(3px);
+  accent-color: rgb(102, 0, 204);
+}
+
+.terms {
+  justify-self: center;
+}
+
+/* -------------- links ------------ */
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.terms a {
+  font-style: italic;
+}
+.forgot a:hover,
+.terms a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* -------------- Buttons ------------ */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 1rem 0rem;
+}
+button {
+  border-radius: 20px;
+  padding: 1rem;
+  width: 10rem;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  opacity: 0.6;
+}
+/* login box & registerbox btn hover effect */
+.btn button:hover {
+  background-color: #6600cc;
+  opacity: 1;
+  color: white;
+}
+
+/* login start & register start btn hover effeect*/
+
+.btn.start button:hover {
+  background-color: white;
+  opacity: 1;
+  color: black;
+}
+
+/* -------------- Icons ------------ */
+
+.login-box .user-icon {
+  position: absolute;
+  top: 12.3rem;
+  right: 3.5rem;
+  width: 1.3rem;
+  cursor: pointer;
+}
+
+.login-box .key-icon {
+  position: absolute;
+  top: 16.3rem;
+  right: 3.5rem;
+  width: 1.3rem;
+  cursor: pointer;
+}
+
+.register-box .email-icon {
+  position: absolute;
+  top: 10.6rem;
+  right: 3.5rem;
+  width: 1.3rem;
+  cursor: pointer;
+}
+
+.register-box .user-icon {
+  position: absolute;
+  top: 14.6rem;
+  right: 3.5rem;
+  width: 1.3rem;
+  cursor: pointer;
+}
+
+.register-box .key-icon {
+  position: absolute;
+  top: 18.6rem;
+  right: 3.5rem;
+  width: 1.3rem;
+  cursor: pointer;
+}
+
+.reset-box .email-icon {
+  position: absolute;
+  top: 15.8rem;
+  right: 3.5rem;
+  width: 1.3rem;
+  cursor: pointer;
+}
+
+/* -------------- Text utilities ------------ */
+
+h1,
+h2 {
+  color: black;
+  text-align: center;
+  margin: 3rem 2rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  letter-spacing: 0px;
+}
+
+.register-box h1 {
+  margin: 1rem;
+}
+
+.register-start h1,
+h2,
+.login-start h1,
+h2 {
+  color: white;
+}
