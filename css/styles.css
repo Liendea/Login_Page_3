@@ -60,7 +60,7 @@ body {
   position: absolute;
   left: 50%;
   transition: all 2s ease;
-  top: 0rem;
+  top: 0;
 }
 
 .login-start.hidden {
@@ -83,7 +83,7 @@ body {
   flex-direction: column;
   position: absolute;
   left: 50%;
-  top: 0rem;
+  top: 0;
   transition: all 2s ease;
 }
 
@@ -103,7 +103,7 @@ body {
   flex-direction: column;
   position: absolute;
   left: 0%;
-  top: 0rem;
+  top: 0;
   transition: all 1s ease-in-out;
 }
 
@@ -123,13 +123,13 @@ body {
   flex-direction: column;
   position: absolute;
   left: 0%;
-  top: 0rem;
+  top: 0;
   transition: all 1.5s ease-in-out;
 }
 
 .reset-box.hidden {
   position: absolute;
-  top: 0rem;
+  top: 0;
   left: -50%;
   transition: all 0.5s ease-in-out;
 }
@@ -166,7 +166,7 @@ input::placeholder {
   height: 1rem;
   accent-color: rgb(121, 75, 194);
   transform: translateY(3px);
-  margin-top: 0rem;
+  margin-top: 0;
 }
 
 .forgot {
@@ -215,7 +215,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0rem 1rem 0rem;
+  margin: 2rem 0 1rem 0;
 }
 button {
   border-radius: 20px;
@@ -302,7 +302,7 @@ h2 {
 }
 
 h2 {
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .register-box h1 {
