@@ -36,7 +36,7 @@ body {
   flex-direction: column;
   position: absolute;
   transition: all 1s ease-in-out;
-  bottom: 0rem;
+  bottom: 0;
 }
 
 .login-box.hidden {
