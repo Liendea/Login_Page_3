@@ -142,7 +142,6 @@ body {
 }
 
 /* -------------- Inputs ------------ */
-
 input {
   border-radius: 20px;
   border: none;
@@ -284,7 +283,7 @@ button {
 
 .reset-box .email-icon {
   position: absolute;
-  top: 14.6rem;
+  top: 15.6rem;
   right: 3.5rem;
   width: 1.3rem;
   cursor: pointer;
